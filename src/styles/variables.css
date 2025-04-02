@@ -1,0 +1,16 @@
+:root {
+	--color-white: #d8dbe2;
+	--color-accent: #a63446;
+	--color-dark-gray: #1b1c22;
+	--color-black: #121317;
+	--color-slate-gray: #2a5050;
+	--color-dark-cyan: #558c8c;
+	--color-background: var(--color-black);
+	--color-background-secondary: var(--color-dark-gray);
+	--font-size-base: 16px;
+	--font-size-large: 20px;
+	--font-size-small: 14px;
+	--spacing-small: 8px;
+	--spacing-medium: 16px;
+	--spacing-large: 24px;
+}

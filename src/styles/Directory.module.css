@@ -1,0 +1,10 @@
+@import './variables.css';
+
+.directory {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	background-color: var(--color-background-secondary);
+	padding: 1rem;
+}

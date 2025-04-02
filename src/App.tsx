@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header'
+import FileBrowser from './components/FileBrowser'
+import styles from './styles/App.module.css'
+import getTree from './utils/getTree'
+import { useEffect, useState } from 'react'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [tree, setTree] = useState<Array<String>>([])
+	// Fetch data tree from the server
+	useEffect(() => {
+		const fetchFiles = async () => {
+			try {
+				const currentTree = await getTree()
+				setTree(currentTree)
+			} catch (error) {
+				console.error('Error fetching data tree:', error)
+			}
+		}
+
+		fetchFiles()
+	}, [])
+	console.log(tree)
+	return (
+		<div className={styles.app}>
+			<Header />
+			<FileBrowser />
+		</div>
+	)
 }
 
-export default App;
+export default App
