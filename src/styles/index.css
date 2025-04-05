@@ -1,8 +1,8 @@
 @import './variables.css';
 
 body {
-	background-color: var(--color-black);
-	color: var(--color-white);
+	background-color: var(--color-background);
+	color: var(--color-text);
 	margin: 0;
 	font-size: var(--font-size-base);
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -10,4 +10,9 @@ body {
 		'Droid Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	height: 100vh;
+}
+
+#root {
+	height: 100%;
 }

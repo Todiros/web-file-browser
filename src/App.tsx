@@ -3,23 +3,9 @@ import FileBrowser from './components/FileBrowser'
 import styles from './styles/App.module.css'
 import getTree from './utils/getTree'
 import { useEffect, useState } from 'react'
+import { Directory } from './utils/types'
 
 function App() {
-	const [tree, setTree] = useState<Array<String>>([])
-	// Fetch data tree from the server
-	useEffect(() => {
-		const fetchFiles = async () => {
-			try {
-				const currentTree = await getTree()
-				setTree(currentTree)
-			} catch (error) {
-				console.error('Error fetching data tree:', error)
-			}
-		}
-
-		fetchFiles()
-	}, [])
-	console.log(tree)
 	return (
 		<div className={styles.app}>
 			<Header />

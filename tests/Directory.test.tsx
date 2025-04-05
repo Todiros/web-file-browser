@@ -1,11 +1,11 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
-import Directory from '../src/components/Directory'
+import Directories from '../src/components/Directories'
 
 describe('Directory Component', () => {
 	it('renders the directory name', () => {
-		render(<Directory />)
+		render(<Directories name="images" />)
 		const directory = screen.getByText(/Directory/i)
 		expect(directory).toBeInTheDocument()
 	})

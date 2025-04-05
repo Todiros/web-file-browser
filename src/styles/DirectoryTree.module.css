@@ -1,0 +1,6 @@
+@import './variables.css';
+
+.directoryTree {
+	display: flex;
+	padding: 2rem 0;
+}
