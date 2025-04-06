@@ -20,13 +20,16 @@ export const Directories = ({
 		setIsExpanded(!isExpanded)
 	}
 
-	const renderInitialDirectory = (
+	const renderParentDirectory = (
 		expanded: boolean,
-		name: string
+		name: string,
+		children: Directory[]
 	) => {
+		const hasChildren = children.some(dir => dir.children)
 		return (
 			<>
-				<Chevron isExpanded={expanded} /> {name}
+				{hasChildren && <Chevron isExpanded={expanded} />}
+				{name}
 			</>
 		)
 	}
@@ -37,7 +40,8 @@ export const Directories = ({
 				onClick={handleClick}
 				className={styles.directoryHeader}
 			>
-				{children && renderInitialDirectory(isExpanded, name)}
+				{children &&
+					renderParentDirectory(isExpanded, name, children)}
 			</div>
 			{isExpanded && children && (
 				<div>

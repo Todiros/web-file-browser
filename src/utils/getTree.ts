@@ -7,8 +7,6 @@ const getTree = (): Array<Directory> => {
 	files.forEach((file: any) => {
 		const parts = file.split('/')
 		let current: Directory[] = root
-		// removes the file name from path
-		// parts.splice(-1, 1)
 
 		parts.forEach((part: string, index: number) => {
 			let existing = current.find(

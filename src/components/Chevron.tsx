@@ -11,8 +11,8 @@ const Chevron = ({
 }) => {
 	return (
 		<svg
-			width={width ?? '24px'}
-			height={height ?? '24px'}
+			width={width ?? '12px'}
+			height={height ?? '12px'}
 			viewBox="0 0 24 24"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"

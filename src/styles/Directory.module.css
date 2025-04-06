@@ -6,11 +6,12 @@
 	align-items: flex-start;
 	justify-content: flex-start;
 	margin-left: 1.5em;
-	transition: transform 650ms all;
 }
 .directoryHeader {
+	display: flex;
+	align-items: center;
 	cursor: pointer;
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 	font-weight: 600;
 }
 
@@ -18,5 +19,6 @@
 	margin: 0;
 }
 svg {
-	transition: transform 350ms ease-in-out;
+	transition: transform 250ms ease-in-out;
+	margin-right: 12px;
 }

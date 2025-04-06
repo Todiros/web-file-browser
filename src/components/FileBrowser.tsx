@@ -23,12 +23,13 @@ const FileBrowser = () => {
 
 		fetchFiles()
 	}, [])
-
+	console.log(tree)
 	return (
-		<main className={styles.layout}>
+		<div className={styles.layout}>
+			{/* TODO: Should work with array of directories */}
 			<DirectoryTree {...(tree[0] as Directory)} />
 			<Viewer />
-		</main>
+		</div>
 	)
 }
 
