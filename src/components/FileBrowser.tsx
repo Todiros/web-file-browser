@@ -28,7 +28,7 @@ const FileBrowser = () => {
 		<div className={styles.layout}>
 			{/* TODO: Should work with array of directories */}
 			<DirectoryTree {...(tree[0] as Directory)} />
-			<Viewer />
+			<Viewer directories={tree} />
 		</div>
 	)
 }
