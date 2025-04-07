@@ -1,7 +1,7 @@
 import files from '../res/data'
 import { Directory } from './types'
 
-const getTree = (): Array<Directory> => {
+const getTree = (paths?: Array<string>): Array<Directory> => {
 	const root: Array<Directory> = []
 
 	files.forEach((file: any) => {

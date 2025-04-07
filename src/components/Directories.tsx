@@ -48,6 +48,7 @@ export const Directories = ({
 			<div
 				onClick={handleClick}
 				className={styles.directoryHeader}
+				data-testid={`folder-${name}`}
 			>
 				{children &&
 					renderParentDirectory(isExpanded, name, children)}

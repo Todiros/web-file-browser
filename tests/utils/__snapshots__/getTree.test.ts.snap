@@ -1,0 +1,601 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`builds a nested tree from file paths 1`] = `
+[
+  {
+    "children": [
+      {
+        "name": "data_log.txt",
+      },
+      {
+        "name": "config_setup.txt",
+      },
+      {
+        "children": [
+          {
+            "name": "readme.txt",
+          },
+          {
+            "name": "todo_list.txt",
+          },
+          {
+            "children": [
+              {
+                "name": "notes.txt",
+              },
+              {
+                "name": "report.txt",
+              },
+              {
+                "children": [
+                  {
+                    "name": "changelog.txt",
+                  },
+                  {
+                    "name": "instructions.txt",
+                  },
+                  {
+                    "children": [
+                      {
+                        "name": "summary.txt",
+                      },
+                      {
+                        "name": "errors.txt",
+                      },
+                    ],
+                    "name": "folder4",
+                  },
+                ],
+                "name": "folder3",
+              },
+            ],
+            "name": "folder2",
+          },
+        ],
+        "name": "folder1",
+      },
+      {
+        "children": [
+          {
+            "name": "settings.txt",
+          },
+          {
+            "name": "logbook.txt",
+          },
+          {
+            "children": [
+              {
+                "name": "backup.txt",
+              },
+              {
+                "name": "archive.txt",
+              },
+              {
+                "children": [
+                  {
+                    "name": "config.txt",
+                  },
+                  {
+                    "name": "manifest.txt",
+                  },
+                  {
+                    "children": [
+                      {
+                        "name": "users.txt",
+                      },
+                      {
+                        "name": "permissions.txt",
+                      },
+                    ],
+                    "name": "folderD",
+                  },
+                ],
+                "name": "folderC",
+              },
+            ],
+            "name": "folderB",
+          },
+        ],
+        "name": "folderA",
+      },
+      {
+        "children": [
+          {
+            "name": "events.txt",
+          },
+          {
+            "children": [
+              {
+                "name": "snapshot.txt",
+              },
+              {
+                "children": [
+                  {
+                    "name": "history.txt",
+                  },
+                  {
+                    "name": "schedule.txt",
+                  },
+                  {
+                    "children": [
+                      {
+                        "name": "tasks.txt",
+                      },
+                      {
+                        "name": "milestones.txt",
+                      },
+                    ],
+                    "name": "folderW",
+                  },
+                ],
+                "name": "folderZ",
+              },
+            ],
+            "name": "folderY",
+          },
+        ],
+        "name": "folderX",
+      },
+      {
+        "children": [
+          {
+            "name": "roadmap.txt",
+          },
+          {
+            "children": [
+              {
+                "name": "analysis.txt",
+              },
+              {
+                "children": [
+                  {
+                    "name": "review.txt",
+                  },
+                  {
+                    "name": "checklist.txt",
+                  },
+                  {
+                    "children": [
+                      {
+                        "name": "metrics.txt",
+                      },
+                      {
+                        "name": "outcomes.txt",
+                      },
+                      {
+                        "children": [
+                          {
+                            "name": "forecast.txt",
+                          },
+                          {
+                            "name": "progress.txt",
+                          },
+                        ],
+                        "name": "folderSub4",
+                      },
+                    ],
+                    "name": "folderSub3",
+                  },
+                ],
+                "name": "folderSub2",
+              },
+            ],
+            "name": "folderSub",
+          },
+        ],
+        "name": "folderMain",
+      },
+      {
+        "children": [
+          {
+            "name": "database_dump.txt",
+          },
+          {
+            "children": [
+              {
+                "name": "audit_log.txt",
+              },
+              {
+                "name": "user_activity.txt",
+              },
+            ],
+            "name": "reports",
+          },
+          {
+            "children": [
+              {
+                "name": "old_versions.txt",
+              },
+              {
+                "name": "log_2023.txt",
+              },
+              {
+                "children": [
+                  {
+                    "name": "system_report.txt",
+                  },
+                  {
+                    "name": "error_log.txt",
+                  },
+                ],
+                "name": "year2024",
+              },
+              {
+                "children": [
+                  {
+                    "name": "financial_report.txt",
+                  },
+                  {
+                    "name": "transactions.txt",
+                  },
+                ],
+                "name": "year2023",
+              },
+            ],
+            "name": "archives",
+          },
+        ],
+        "name": "data",
+      },
+      {
+        "children": [
+          {
+            "name": "debug_log.txt",
+          },
+          {
+            "children": [
+              {
+                "name": "server_status.txt",
+              },
+              {
+                "name": "access_log.txt",
+              },
+            ],
+            "name": "2024",
+          },
+          {
+            "children": [
+              {
+                "name": "system_health.txt",
+              },
+              {
+                "name": "security_breach.txt",
+              },
+            ],
+            "name": "2023",
+          },
+          {
+            "children": [
+              {
+                "name": "fatal_errors.txt",
+              },
+              {
+                "name": "debugging_notes.txt",
+              },
+            ],
+            "name": "errors",
+          },
+        ],
+        "name": "logs",
+      },
+      {
+        "children": [
+          {
+            "name": "setup_guide.txt",
+          },
+          {
+            "children": [
+              {
+                "name": "account_info.txt",
+              },
+              {
+                "children": [
+                  {
+                    "name": "preferences.txt",
+                  },
+                  {
+                    "name": "activity_log.txt",
+                  },
+                ],
+                "name": "user1",
+              },
+              {
+                "children": [
+                  {
+                    "name": "saved_sessions.txt",
+                  },
+                  {
+                    "name": "error_history.txt",
+                  },
+                ],
+                "name": "user2",
+              },
+            ],
+            "name": "profiles",
+          },
+        ],
+        "name": "configs",
+      },
+      {
+        "children": [
+          {
+            "name": "init_script.txt",
+          },
+          {
+            "children": [
+              {
+                "name": "data_parser.txt",
+              },
+              {
+                "name": "analysis_script.txt",
+              },
+            ],
+            "name": "python",
+          },
+          {
+            "children": [
+              {
+                "name": "system_cleanup.txt",
+              },
+              {
+                "name": "deploy_script.txt",
+              },
+            ],
+            "name": "bash",
+          },
+          {
+            "children": [
+              {
+                "name": "query_log.txt",
+              },
+              {
+                "name": "migration_notes.txt",
+              },
+            ],
+            "name": "sql",
+          },
+        ],
+        "name": "scripts",
+      },
+      {
+        "children": [
+          {
+            "name": "banner_images.txt",
+          },
+          {
+            "children": [
+              {
+                "name": "thumbnails.txt",
+              },
+              {
+                "name": "gallery_list.txt",
+              },
+            ],
+            "name": "images",
+          },
+          {
+            "children": [
+              {
+                "name": "video_metadata.txt",
+              },
+              {
+                "name": "clips_list.txt",
+              },
+            ],
+            "name": "videos",
+          },
+          {
+            "children": [
+              {
+                "name": "audio_library.txt",
+              },
+              {
+                "name": "sound_effects.txt",
+              },
+            ],
+            "name": "sounds",
+          },
+        ],
+        "name": "assets",
+      },
+      {
+        "children": [
+          {
+            "name": "overview.txt",
+          },
+          {
+            "children": [
+              {
+                "name": "development_log.txt",
+              },
+              {
+                "children": [
+                  {
+                    "name": "specifications.txt",
+                  },
+                  {
+                    "name": "meeting_notes.txt",
+                  },
+                ],
+                "name": "docs",
+              },
+              {
+                "children": [
+                  {
+                    "name": "source_code.txt",
+                  },
+                  {
+                    "name": "debug_info.txt",
+                  },
+                ],
+                "name": "src",
+              },
+            ],
+            "name": "projectA",
+          },
+          {
+            "children": [
+              {
+                "name": "research_notes.txt",
+              },
+              {
+                "children": [
+                  {
+                    "name": "blueprints.txt",
+                  },
+                ],
+                "name": "docs",
+              },
+              {
+                "children": [
+                  {
+                    "name": "compilation_errors.txt",
+                  },
+                  {
+                    "name": "test_cases.txt",
+                  },
+                ],
+                "name": "src",
+              },
+            ],
+            "name": "projectB",
+          },
+          {
+            "children": [
+              {
+                "name": "prototype_design.txt",
+              },
+              {
+                "children": [
+                  {
+                    "name": "architecture.txt",
+                  },
+                ],
+                "name": "docs",
+              },
+              {
+                "children": [
+                  {
+                    "name": "initial_commit.txt",
+                  },
+                  {
+                    "name": "final_build.txt",
+                  },
+                ],
+                "name": "src",
+              },
+            ],
+            "name": "projectC",
+          },
+        ],
+        "name": "projects",
+      },
+      {
+        "children": [
+          {
+            "name": "random_ideas.txt",
+          },
+          {
+            "children": [
+              {
+                "name": "jokes_collection.txt",
+              },
+              {
+                "name": "wordplay.txt",
+              },
+            ],
+            "name": "fun",
+          },
+          {
+            "children": [
+              {
+                "name": "personal_memo.txt",
+              },
+              {
+                "name": "project_brainstorm.txt",
+              },
+            ],
+            "name": "notes",
+          },
+          {
+            "children": [
+              {
+                "name": "useful_links.txt",
+              },
+              {
+                "name": "documentation.txt",
+              },
+              {
+                "children": [
+                  {
+                    "name": "reading_list.txt",
+                  },
+                  {
+                    "name": "literary_analysis.txt",
+                  },
+                ],
+                "name": "books",
+              },
+              {
+                "children": [
+                  {
+                    "name": "web_resources.txt",
+                  },
+                  {
+                    "name": "api_endpoints.txt",
+                  },
+                ],
+                "name": "links",
+              },
+              {
+                "children": [
+                  {
+                    "name": "tutorials.txt",
+                  },
+                  {
+                    "name": "user_guides.txt",
+                  },
+                  {
+                    "children": [
+                      {
+                        "name": "whitepapers.txt",
+                      },
+                      {
+                        "name": "case_studies.txt",
+                      },
+                    ],
+                    "name": "pdf",
+                  },
+                  {
+                    "children": [
+                      {
+                        "name": "contracts.txt",
+                      },
+                      {
+                        "name": "letters.txt",
+                      },
+                    ],
+                    "name": "word",
+                  },
+                  {
+                    "children": [
+                      {
+                        "name": "financial_data.txt",
+                      },
+                    ],
+                    "name": "excel",
+                  },
+                ],
+                "name": "docs",
+              },
+            ],
+            "name": "reference",
+          },
+        ],
+        "name": "misc",
+      },
+    ],
+    "name": "root",
+  },
+]
+`;
