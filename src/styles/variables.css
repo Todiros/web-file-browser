@@ -1,19 +1,16 @@
 :root {
-	--color-accent: #a63446;
-	--color-dark-gray: #1b1c22;
 	--color-black: #131217;
+	--color-dark-gray: #1b1c22;
+	--color-beige: #f4eee0;
+	--color-red: #a63446;
+	--color-blue: #a3b9c9;
 	--color-purple-600: #393646;
 	--color-purple-400: #4f4557;
 	--color-purple-200: #6d5d6e;
-	--color-beige: #f4eee0;
-	--color-blue: #a3b9c9;
 	--color-background: var(--color-purple-600);
 	--color-background-secondary: var(--color-dark-gray);
 	--color-text: var(--color-beige);
-	--font-size-base: 16px;
-	--font-size-large: 20px;
-	--font-size-small: 14px;
-	--spacing-small: 8px;
-	--spacing-medium: 16px;
-	--spacing-large: 24px;
+	--font-size-small: 0.875rem;
+	--font-size-base: 1rem;
+	--font-size-large: 1.25rem;
 }

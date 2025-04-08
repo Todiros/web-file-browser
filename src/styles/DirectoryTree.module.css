@@ -1,10 +1,32 @@
 @import './variables.css';
 
-.directoryTree {
+.directory {
 	display: flex;
-	padding: 2rem 0;
-	height: 100%;
-	overflow-y: auto;
-	scroll-behavior: smooth;
-	scrollbar-width: none;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-left: 1.8em;
+}
+.directoryHeader {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	margin-bottom: 1.5em;
+}
+
+.directoryHeader:empty {
+	margin: 0;
+}
+
+.heavyFont {
+	font-weight: 600;
+}
+
+.lightFont {
+	font-weight: 300;
+}
+
+svg {
+	transition: transform 250ms ease-in-out;
+	margin-right: 12px;
 }

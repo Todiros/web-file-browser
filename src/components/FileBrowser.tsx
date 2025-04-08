@@ -3,7 +3,7 @@
 // It includes the Directory and WorkingDir components.
 import { useEffect, useState } from 'react'
 import styles from '../styles/FileBrowser.module.css'
-import DirectoryTree from './DirectoryTree'
+import DirectorySidebar from './DirectorySidebar'
 import Viewer from './Viewer'
 import { Directory } from '../utils/types'
 import getTree from '../utils/getTree'
@@ -23,11 +23,13 @@ const FileBrowser = () => {
 
 		fetchFiles()
 	}, [])
-	console.log(tree)
+
+	const parsedTree =
+		tree.length === 1 ? tree[0] : { name: 'root', children: tree }
+
 	return (
 		<div className={styles.layout}>
-			{/* TODO: Should work with array of directories */}
-			<DirectoryTree {...(tree[0] as Directory)} />
+			<DirectorySidebar {...parsedTree} />
 			<Viewer directories={tree} />
 		</div>
 	)

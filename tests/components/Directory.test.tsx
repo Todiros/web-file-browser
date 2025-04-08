@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
-import Directories from '../../src/components/Directories'
+import DirectoryTree from '../../src/components/DirectoryTree'
 import AppProvider from '../../src/components/AppProvider'
 import { directoryTree } from '../../src/res/mockDirectoryTree'
 
@@ -9,7 +9,7 @@ describe('Directory Tree Component', () => {
 	it('renders the top level directories', () => {
 		render(
 			<AppProvider>
-				<Directories
+				<DirectoryTree
 					name={name}
 					children={children}
 				/>
@@ -24,7 +24,7 @@ describe('Directory Tree Component', () => {
 	it('does not render subdirectories upon load', () => {
 		render(
 			<AppProvider>
-				<Directories
+				<DirectoryTree
 					name={name}
 					children={children}
 				/>
@@ -39,7 +39,7 @@ describe('Directory Tree Component', () => {
 	it('does not render files', () => {
 		render(
 			<AppProvider>
-				<Directories
+				<DirectoryTree
 					name={name}
 					children={children}
 				/>
@@ -58,17 +58,4 @@ describe('Directory Tree Component', () => {
 			screen.queryByText('letters.txt')
 		).not.toBeInTheDocument()
 	})
-
-	// it('renders correct number of top level directories', async () => {
-	// 	render(
-	// 		<AppProvider>
-	// 			<Directories
-	// 				name={name}
-	// 				children={children}
-	// 			/>
-	// 		</AppProvider>
-	// 	)
-	// 	const dirCount = await screen.findAllByRole('article')
-	// 	expect(dirCount.length).toBe(12)
-	// })
 })

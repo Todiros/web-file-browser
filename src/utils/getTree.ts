@@ -1,4 +1,4 @@
-import files from '../res/data'
+import files from '../res/filePaths'
 import { Directory } from './types'
 
 const getTree = (paths?: Array<string>): Array<Directory> => {
