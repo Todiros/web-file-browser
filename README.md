@@ -34,6 +34,16 @@ Launches Playwright testing suite.
 
 Launches both Jest and Playwright testing suite.
 
+## Currently Implemented
+
+- Fundamental component structure and design layout
+- Testing setup with Jest and Playwright
+- Automated testing on-push via Github Actions
+- Mapping of URL into an object tree
+- Recursively rendering directory tree into the sidebar
+- Incorporated Context API
+- Plan for further action
+
 ## Compromises Made
 
 - Minimal UI design and component styling.
@@ -45,6 +55,7 @@ Launches both Jest and Playwright testing suite.
 ### Next Steps
 
 - Render and style the files and folders into the Working Directory Viewer.
+- Add documentation.
 - Implement authentication and authorization, and connect with S3 Bucket.
 - File creation functionality.
 - File deletion functionality.
