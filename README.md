@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Intro
+
+Web File Browser is a simple web application that allows you to browse files and directories from a personal AWS S3 bucket.
+
+# Getting Started with Web File Browser
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -16,31 +20,40 @@ You will also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches Jest testing suite.\
 
-### `npm run build`
+### `npm test:e2e`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Launches Playwright testing suite.\
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm test:all`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Launches both Jest and Playwright testing suite.\
 
-### `npm run eject`
+# Compromises Made
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Minimal UI design and component styling.
+- Limited testing coverage, which may leave edge cases untested.
+- Suboptimal rendering of directories - potentially inefficient with large deeply nested directory tree
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Roadmap
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Next Steps
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Render and style the files and folders into the Working Directory Viewer.
+- Implement authentication and authorization, and connect with S3 Bucket.
+- File creation functionality.
+- File deletion functionality.
+- Add navigation with CRUD buttons.
+- Improve accessibility, cross-browser support and responsiveness.
 
-## Learn More
+## Extra Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Incorporate interactive breadcrum bar.
+- Implement files editing functionality.
+- Introduce a search functionality to quickly locate files or directories.
+- Add support for image files.
+- Optimize the application to handle deeply nested directory structures more efficiently.
+- Add drag-and-drop support.
+- Enhance the UI with file previews and metadata display.
+- Add support for multiple storage backends, such as GCS.
